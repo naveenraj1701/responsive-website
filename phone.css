@@ -1,0 +1,312 @@
+body{
+    margin: 0px;
+     background-color: black;
+     background-repeat: no-repeat;
+}
+
+
+.main-header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head3::first-letter{
+    color: white;
+    font-size: 100px;
+}
+
+.head3{
+    padding-left: 30px;
+    color: white;
+    font-family: "Supermercado One", sans-serif;
+}
+
+.home{
+    font-size: 30px;
+    display: flex;
+    color: white;
+    gap: 40px;
+    margin-top: 50px;
+   opacity: 0;
+   animation: slide 3s 3s forwards;
+   animation-delay: 0.5s;
+   cursor: pointer;
+   font-family: "Supermercado One", sans-serif;
+}
+
+.home-btn:hover{
+   font-size: 40px;
+}
+
+@keyframes slide{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.button1{
+    font-family: "Supermercado One", sans-serif;
+     background: rgba(255,255,255,0.2);
+    color: white;
+    border: none;
+   width: 100px;
+   height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 40px;
+    backdrop-filter: blur(5px);
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin: 60px 40px 0px 0px;
+}
+
+.introduction{
+    display: flex;
+}
+
+.main-container{
+    display: flex;
+}
+
+.intro{
+    display: flex;
+    height: 320px;
+    margin:0px 0px 0px 70px;
+    color: white;
+    width: 700px;
+     opacity: 0;
+    animation: rmove 3s 3s forwards;
+    animation-delay: 1s;
+     font-family: "Supermercado One", sans-serif;
+     font-size: 35px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@keyframes rmove{
+    from{
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.intro-content{
+   font-family: "Supermercado One", sans-serif;
+    color: white;
+    font-size: 30px;
+    margin-left: 70px;
+    width: 600px;
+     opacity: 0;
+    animation: rrmove 3.5s 3s forwards;
+    animation-delay: 1.5s;
+}
+
+@keyframes rrmove {
+    from{
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+} 
+
+.image-phone{
+    width: 450px;
+    margin-top: 50px;
+ 
+}
+
+
+.image-div{
+    opacity: 0;
+    animation: imag 4s 3s forwards;
+    animation-delay: 2s;
+   
+}
+
+@keyframes imag{
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.button2{
+    font-family: "Supermercado One", sans-serif;
+    border: none;
+    border-radius: 25px;
+    width: 150px;
+    height: 50px;
+    margin: 0px 0px 10px 70px;
+    opacity: 0;
+    animation: butt 3s 2s forwards;
+    animation-delay: 2.5s;
+    cursor: pointer;
+    
+}
+
+
+
+@keyframes butt {
+    from{
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+} 
+
+.button2:hover{
+    background: linear-gradient(135deg, #fc5c7d 0%, #6a82fb 100%);
+}
+
+
+@media (max-width:320px){
+        .head3{
+            font-size: 10px;
+        }
+        .home{
+            font-size: 15px;
+            margin-left: 35px;
+        }
+        .button1{
+          font-size: 10px;
+          margin: 55px 0px 0px 50px;
+        }
+
+        .main-container{
+            margin-left: -30px;
+        }
+    
+        .intro{
+            font-size: 22px;
+            width: 250px;
+            height: 290px;
+        }
+        .intro-content{
+            font-size: 20px;
+            width: 250px;
+            height: 180px;
+        }
+       .image-phone{
+           width: 250px;
+       }
+       .button2{
+        margin-left: 40px;
+       }
+}
+@media screen and (min-width: 321px) and (max-width: 480px){
+   .home{
+    margin-left: 100px;
+    gap: 60px;
+   }
+   .button1{
+    margin-left: 100px;
+    padding-right: 100px;
+   }
+   .intro{
+    font-size: 40px;
+    width: 450px;
+    height: 550px;
+   }
+   .intro-content{
+    font-size: 40px;
+    width: 500px;
+    height: 350px;
+   }
+   .button2{
+    font-size: 25px;
+    width: 200px;
+    height: 80px;
+   }
+   .image-div{
+    margin-top: 50px;
+    margin-left: -20px;
+   }
+   .image-phone{
+    width: 500px;
+   }
+}
+
+@media screen and (min-width: 481px) and (max-width: 600px){
+    .home{
+        margin-left: 150px;
+        font-size: 35px;
+        gap: 70px;
+    }
+    .button1{
+        margin-left: 100px;
+    }
+    .intro{
+        font-size: 40px;
+        width: 450px;
+        height: 550px;
+    }
+    .intro-content{
+        font-size: 35px;
+        width: 500px;
+        height: 300px;
+    }
+
+    .button2{
+        font-size: 20px;
+        width: 200px;
+        height: 70px;
+    }
+    .image-div{
+        margin-top: 50px;
+    }
+    .image-phone{
+        width: 500px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px){
+    .home{
+        margin-left: 150px;
+    }
+    .button1{
+        margin: 50px 30px 0px 130px;
+    }
+     .intro{
+        font-size: 40px;
+        width: 450px;
+        height: 550px;
+    }
+    .intro-content{
+        font-size: 35px;
+        width: 500px;
+        height: 300px;
+    }
+     .button2{
+        font-size: 20px;
+        width: 200px;
+        height: 70px;
+    }
+    .image-div{
+        margin-top: 50px;
+    }
+    .image-phone{
+        width: 500px;
+    }
+    
+}
+
